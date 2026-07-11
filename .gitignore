@@ -1,0 +1,4 @@
+# Saídas geradas contêm dados pessoais reais (nome, empregadores, histórico de
+# carreira) de quem usar a skill — não commitar por padrão.
+*-linkedin-otimizado.md
+*-curriculo-otimizado.md
