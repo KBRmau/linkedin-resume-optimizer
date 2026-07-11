@@ -184,6 +184,13 @@ densidade, os padrões que fazem diferença são:
 
 ### Etapa 2b — Currículo (CV), só se o usuário pedir
 
+**Fonte de dados**: se o LinkedIn já foi coletado/otimizado nesta conversa,
+não peça um currículo em PDF/texto do zero — reaproveite headline, About,
+experiências e educação já coletados na Etapa 1 como ponto de partida, e só
+pergunte o que falta (dados de contato, descrição da vaga-alvo se houver).
+Só peça um currículo colado do zero se o usuário quiser **só** o currículo,
+sem nunca ter passado pela coleta do LinkedIn nesta conversa.
+
 Currículo e LinkedIn seguem os **mesmos padrões de conteúdo** — mesma régua
 de senioridade, mesmo template de bullet, mesmo range de 3-5 bullets por
 experiência (sem exceção para cargo antigo), mesma exigência de dado
@@ -413,6 +420,22 @@ Regras do conteúdo (independente de ser chat ou arquivo):
   (ex. bullet incompleto por pendência real de dado) — usar julgamento.
 - Depois de gerar o arquivo, informe ao usuário o caminho do arquivo e um
   resumo de 1-2 frases do que mudou — não repita o conteúdo inteiro no chat.
+- **Depois de entregar o `.md` do LinkedIn, se o currículo ainda não foi
+  pedido nem recusado explicitamente nesta conversa, pergunte se a pessoa
+  quer que a gente monte o currículo também** (Etapa 2b). Isso vale mesmo se
+  ela já tinha dito "não" lá no item 9 da coleta — nesse ponto ela só via o
+  LinkedIn pronto agora, então é uma pergunta nova, não repetição. Se ela já
+  pediu os dois de início, não perguntar de novo depois de entregar o
+  LinkedIn — só perguntar quando currículo ainda estiver em aberto.
+  **Se ela disser sim, não peça pra colar um currículo do zero** — monte o
+  currículo a partir dos dados já coletados na Etapa 1 (headline → vira
+  título, About → vira base do Resumo Profissional, experiências e
+  educação já coletadas), aplicando as transformações da Etapa 2b em cima
+  do que já existe. Só pergunte o que **não** dá pra derivar do que já foi
+  coletado: dados de contato (telefone, e-mail, endereço/cidade se não
+  vieram antes) e, opcionalmente, a descrição da vaga-alvo (item 11) se
+  ainda não foi dada. Recolher tudo de novo do zero seria repetir trabalho
+  que o usuário já fez.
 
 ## Etapa 3 — Depois do texto: Open to Work e SSI
 
