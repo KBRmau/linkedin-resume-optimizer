@@ -4,7 +4,7 @@
 //
 // Usage: node generate-pdf.mjs <input.html> <output.pdf> [--format=letter|a4]
 
-import { existsSync } from "node:fs";
+import { existsSync, mkdirSync } from "node:fs";
 import path from "node:path";
 import puppeteer from "puppeteer-core";
 
@@ -26,6 +26,9 @@ if (!existsSync(inputPath)) {
   console.error(`Input HTML not found: ${inputPath}`);
   process.exit(1);
 }
+
+// pdf/output/ is gitignored, so a fresh clone won't have it yet.
+mkdirSync(path.dirname(outputPath), { recursive: true });
 
 function findBrowser() {
   const candidates =

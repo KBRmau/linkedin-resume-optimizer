@@ -28,21 +28,21 @@ pela metade ou ignorada.
 6. **Área/cargo-alvo** — para qual vaga ou área a pessoa quer que o perfil seja
    otimizado (ex. "Engenharia de Dados", "Backend Go", "Produto"). Isso muda
    quais palavras-chave e conquistas devem ganhar destaque.
-6b. **Idioma do perfil** — perguntar se o perfil deve ficar em português ou em
+7. **Idioma do perfil** — perguntar se o perfil deve ficar em português ou em
    inglês. Usar o mesmo idioma em headline, about e bullets de experiência —
    nunca misturar. Se o texto original já veio todo num idioma só, confirme
    que é para manter esse idioma em vez de assumir.
-7. **(Opcional) Social Selling Index** — pedir para abrir
+8. **(Opcional) Social Selling Index** — pedir para abrir
    `linkedin.com/sales/ssi` e colar os quatro números de "Four components of
    your score" (Establish your professional brand / Find the right people /
    Engage with insights / Build relationships). Isso não muda o texto do
    perfil, mas informa recomendações comportamentais complementares. Ver
    `references/ssi-tips.md` para a escala de pontuação e as dicas por pilar —
    não invente dica, use as listadas lá.
-8. **(Opcional) Currículo em PDF/texto**, se o usuário também quiser o CV
+9. **(Opcional) Currículo em PDF/texto**, se o usuário também quiser o CV
    otimizado, não só o LinkedIn. Se pedir isso, aplicar a Etapa 2b além da
    Etapa 2 — currículo não é o mesmo formato que o perfil do LinkedIn.
-8b. **(Opcional, só se for otimizar currículo) Descrição da vaga-alvo**, se
+10. **(Opcional, só se for otimizar currículo) Descrição da vaga-alvo**, se
    houver uma vaga específica em mente — permite casar palavras-chave do
    currículo com o ATS (Applicant Tracking System) daquela vaga. Sem isso,
    otimiza para o cargo-alvo genérico do item 6. Se houver, aplique **keyword
@@ -211,7 +211,7 @@ LinkedIn:
   - Ordem reverso-cronológica, sempre.
   - 1 página se `< 10 anos` de experiência; 2 páginas se `10+` — nunca mais
     que isso.
-  - Se o usuário deu a descrição da vaga-alvo (item 8b da coleta), extrair as
+  - Se o usuário deu a descrição da vaga-alvo (item 10 da coleta), extrair as
     palavras-chave/skills que aparecem lá e confirmar que aparecem no
     currículo (na seção de skills e/ou em pelo menos um bullet) — isso é o
     que o ATS casa primeiro.
