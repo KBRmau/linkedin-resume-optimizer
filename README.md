@@ -77,6 +77,49 @@ Arquivos de apoio dentro de `skills/linkedin-resume-optimizer/`:
   `puppeteer-core`, usa o Chrome/Edge já instalado, não baixa nada extra).
   Só roda se o usuário pedir PDF explicitamente.
 
+## Como clonar e abrir em cada editor
+
+Primeiro, em qualquer sistema, baixe o repositório uma vez:
+
+```bash
+git clone https://github.com/KBRmau/linkedin-resume-optimizer.git
+cd linkedin-resume-optimizer
+```
+
+Depois, siga o passo do seu editor:
+
+### Claude Code
+
+1. Se ainda não tem o Claude Code instalado, veja em
+   [claude.com/claude-code](https://claude.com/claude-code).
+2. Abra o terminal, entre na pasta clonada (`cd linkedin-resume-optimizer`) e
+   rode `claude`.
+3. Pronto — a pasta `.claude/skills/linkedin-resume-optimizer/` já é
+   descoberta automaticamente. Basta pedir "otimize meu linkedin".
+
+### Cursor
+
+1. Abra o Cursor.
+2. `File → Open Folder...` e selecione a pasta `linkedin-resume-optimizer`
+   que você acabou de clonar (ou `git clone` direto pelo Cursor: `Ctrl+Shift+P`
+   → "Git: Clone" → cole a URL do repositório).
+3. A regra em `.cursor/rules/linkedin-resume-optimizer.mdc` é carregada
+   sozinha quando o pedido combina com a descrição dela — não precisa
+   configurar nada.
+
+### Codex CLI
+
+1. Instale o Codex CLI se ainda não tiver ([documentação oficial da
+   OpenAI](https://developers.openai.com/codex/cli)).
+2. No terminal, entre na pasta clonada (`cd linkedin-resume-optimizer`) e
+   rode `codex`.
+3. Digite `/linkedin-resume-optimizer` para chamar a skill — o prompt em
+   `.codex/prompts/linkedin-resume-optimizer.md` já está pronto.
+
+> Nota: a skill só funciona de dentro da pasta clonada, porque ela lê os
+> arquivos de referência (`skills/linkedin-resume-optimizer/references/` e
+> `pdf/`) usando caminho relativo ao repositório.
+
 ## Como usar por ferramenta (versão técnica)
 
 - **Claude Code**: abra este repositório, peça "otimize meu linkedin" — a
