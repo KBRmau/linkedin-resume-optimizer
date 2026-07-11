@@ -294,6 +294,10 @@ Confirmação dos itens da lista de Regras ATS acima (coluna única, cabeçalhos
 convencionais, ordem cronológica, limite de página, keywords da vaga se
 houver).
 
+## Score
+Tabela Antes/Depois calculada com a rubrica de currículo em
+`references/scoring-rubric.md` — ver "Etapa 2d" abaixo.
+
 ## Resumo
 Tabela final: Seção | Manter | Trocar.
 
@@ -325,6 +329,31 @@ usuário pedir PDF do currículo, use `pdf/`:
 O template já segue as regras ATS da Etapa 2b (coluna única, sem ícone/tabela,
 fonte padrão, cabeçalhos convencionais) — não é preciso reaplicar as regras,
 só preencher.
+
+### Etapa 2d — Score (0-100), sempre, Antes e Depois
+
+Todo `.md` gerado (LinkedIn ou currículo) inclui uma seção `## Score` — é a
+camada de gamificação da skill: a pessoa vê o número de onde partiu e pra
+onde chegou, e sabe exatamente o que fechar pra subir mais.
+
+- Use a rubrica em `references/scoring-rubric.md` (uma tabela pra LinkedIn,
+  outra pra currículo) — são critérios objetivos amarrados aos princípios
+  já usados na otimização (headline, About/Resumo, bullets quantificados,
+  consistência de stack, frases banidas, etc.), não uma nota de impressão
+  geral.
+- Calcule **duas vezes**: uma vez em cima do conteúdo original (Antes), uma
+  vez em cima do conteúdo otimizado final (Depois, já com as pendências que
+  foram fechadas nesta sessão).
+- **Nunca conte bullet com `[FALTA DADO]` como quantificado** — é isso que
+  torna o score honesto: se ainda há pendência aberta, o Depois não recebe
+  nota cheia no critério de "bullets com dado mensurável", mesmo que a
+  estrutura do bullet já esteja pronta. O score só sobe de verdade quando a
+  pessoa volta com o dado real.
+- Mostrar a tabela de breakdown por critério (não só o total) — é o que
+  deixa claro qual é o maior gargalo restante, geralmente ligado a uma
+  pendência específica listada em "## Pendências".
+- Fechar a seção com 1 frase: "Ganho: +NN pontos. Maior gargalo restante:
+  <critério>."
 
 ### Antes de gerar o arquivo: feche as pendências
 
@@ -389,6 +418,10 @@ cada uma com Manter/Trocar/Antes/Depois/Por quê, sempre com 3-5 bullets
 ## Educação
 Manter/Trocar, mesma estrutura. Se não há nada de texto para mudar (caso
 comum), registrar isso explicitamente em vez de omitir a seção.
+
+## Score
+Tabela Antes/Depois calculada com a rubrica de LinkedIn em
+`references/scoring-rubric.md` — ver "Etapa 2d" abaixo.
 
 ## Resumo
 Tabela final: Seção | Manter | Trocar — uma linha por seção, visão de conjunto.

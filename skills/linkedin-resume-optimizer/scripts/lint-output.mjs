@@ -38,9 +38,9 @@ const warnings = [];
 
 // --- 1. Required sections present ---
 const requiredSections = isLinkedIn
-  ? ["## Headline", "## About", "## Top skills", "## Experiências", "## Educação", "## Resumo", "## Open to Work", "## SSI", "## Pendências"]
+  ? ["## Headline", "## About", "## Top skills", "## Experiências", "## Educação", "## Score", "## Resumo", "## Open to Work", "## SSI", "## Pendências"]
   : isCurriculo
-  ? ["## Cabeçalho", "## Resumo Profissional", "## Experiência Profissional", "## Educação", "## Resumo", "## Pendências"]
+  ? ["## Cabeçalho", "## Resumo Profissional", "## Experiência Profissional", "## Educação", "## Score", "## Resumo", "## Pendências"]
   : [];
 
 if (!isLinkedIn && !isCurriculo) {
