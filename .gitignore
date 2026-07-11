@@ -2,6 +2,7 @@
 # carreira) de quem usar a skill — não commitar por padrão.
 *-linkedin-otimizado.md
 *-curriculo-otimizado.md
+*-curriculo-otimizado.pdf
 
 # PDF generator: local deps + generated output (personal data), never commit.
 skills/linkedin-resume-optimizer/pdf/node_modules/
