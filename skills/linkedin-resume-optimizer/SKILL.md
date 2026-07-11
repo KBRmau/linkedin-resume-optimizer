@@ -368,14 +368,13 @@ preenchimento de cada campo com base no cargo-alvo já coletado:
   recrutador; não há motivo prático para recomendar a opção mais fraca.
 - **Employment types**: marcar todos os aceitáveis (Full-time, Contract,
   etc.) — não deixar só Full-time se a pessoa toparia PJ/contrato.
-- **Visibility**: duas opções, com trade-off real:
-  - *Recruiters only*: só quem usa LinkedIn Recruiter vê o sinal — mais
-    discreto, não aparece a moldura verde na foto, bom para quem está
-    empregado e não quer o empregador atual notando.
-  - *All LinkedIn members*: adiciona a **moldura verde #OpenToWork** na foto
-    — maximiza visibilidade e alcance orgânico, mas o empregador atual (e
-    qualquer conexão) também vê. Recomendar isso só se a pessoa não está
-    preocupada com o emprego atual saber, ou já não está empregada.
+- **Visibility**: sempre recomendar **"Recruiters only"** — nunca a moldura
+  verde ("All LinkedIn members"). Não perguntar ao usuário nem oferecer a
+  moldura verde como alternativa padrão. Só quem usa LinkedIn Recruiter vê o
+  sinal; é o suficiente para aparecer em busca de recrutador sem expor a
+  todas as conexões (incluindo empregador atual, colegas, clientes) que a
+  pessoa está procurando vaga — isso é regra fixa da skill, não uma
+  recomendação caso a caso.
 
 Sempre recomende preencher **todos os campos até o limite permitido** (5
 títulos, todas as location types e localizations aplicáveis) — campo vazio é
