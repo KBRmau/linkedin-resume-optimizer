@@ -1,0 +1,9 @@
+{
+  "name": "linkedin-resume-optimizer-pdf",
+  "private": true,
+  "type": "module",
+  "description": "Optional PDF renderer for the linkedin-resume-optimizer skill's résumé output. Not required for the .md-only flow.",
+  "dependencies": {
+    "puppeteer-core": "^23.0.0"
+  }
+}

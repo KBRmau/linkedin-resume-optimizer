@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="{{LANG}}">
+<head>
+<meta charset="utf-8">
+<title>{{NAME}} — CV</title>
+<style>
+  /* ATS-safe: single column, no tables, no icons, standard system fonts, selectable text. */
+  @page { size: {{PAGE_SIZE}}; margin: 0.6in; }
+  * { box-sizing: border-box; }
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11pt;
+    line-height: 1.45;
+    color: #111;
+    margin: 0;
+  }
+  h1 { font-size: 20pt; margin: 0 0 4px 0; }
+  .contact { font-size: 10pt; color: #333; margin: 0 0 16px 0; }
+  .contact span::after { content: " | "; }
+  .contact span:last-child::after { content: ""; }
+  h2 {
+    font-size: 12pt;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    border-bottom: 1px solid #111;
+    margin: 18px 0 8px 0;
+    padding-bottom: 2px;
+  }
+  .summary { margin: 0 0 4px 0; }
+  .role { margin: 10px 0 0 0; }
+  .role-title { font-weight: bold; }
+  .role-meta { font-size: 10pt; color: #333; }
+  ul { margin: 4px 0 0 0; padding-left: 18px; }
+  li { margin: 0 0 3px 0; }
+  .skills p { margin: 2px 0; }
+</style>
+</head>
+<body>
+
+<h1>{{NAME}}</h1>
+<p class="contact">{{CONTACT_LINE}}</p>
+
+<h2>{{SECTION_SUMMARY}}</h2>
+<p class="summary">{{SUMMARY_TEXT}}</p>
+
+<h2>{{SECTION_COMPETENCIES}}</h2>
+<p>{{COMPETENCIES}}</p>
+
+<h2>{{SECTION_EXPERIENCE}}</h2>
+{{EXPERIENCE}}
+
+<h2>{{SECTION_PROJECTS}}</h2>
+{{PROJECTS}}
+
+<h2>{{SECTION_EDUCATION}}</h2>
+{{EDUCATION}}
+
+<h2>{{SECTION_CERTIFICATIONS}}</h2>
+{{CERTIFICATIONS}}
+
+<h2>{{SECTION_SKILLS}}</h2>
+<div class="skills">{{SKILLS}}</div>
+
+</body>
+</html>

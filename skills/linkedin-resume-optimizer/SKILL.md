@@ -226,6 +226,30 @@ LinkedIn:
   faltando — não misturar no mesmo arquivo do LinkedIn, são documentos
   diferentes ainda que compartilhem conteúdo.
 
+### Etapa 2c — PDF do currículo (opcional, só se o usuário pedir explicitamente)
+
+Por padrão a skill entrega só `.md` — **não gerar PDF automaticamente**. Se o
+usuário pedir PDF do currículo, use `pdf/`:
+
+1. Rodar `npm install` dentro de `skills/linkedin-resume-optimizer/pdf/` na
+   primeira vez (instala `puppeteer-core`; não baixa Chromium — usa o
+   Chrome/Edge já instalado na máquina).
+2. Preencher os placeholders `{{...}}` de `pdf/cv-template.html` com o
+   conteúdo final (pós Etapa 2b) do currículo — nome, contato, resumo,
+   competências, experiência, projetos, educação, certificações, skills.
+   Escrever o HTML preenchido em `pdf/output/<nome>-cv.html`.
+3. Detectar formato de papel pelo mercado-alvo: `letter` para EUA/Canadá,
+   `a4` para o resto do mundo (perguntar se não estiver claro).
+4. Rodar: `node pdf/generate-pdf.mjs pdf/output/<nome>-cv.html
+   pdf/output/<nome>-cv.pdf --format=<letter|a4>`.
+5. Reportar o caminho do PDF gerado. Os arquivos em `pdf/output/` contêm
+   dados pessoais — nunca commitar (adicionar ao `.gitignore` se ainda não
+   estiver).
+
+O template já segue as regras ATS da Etapa 2b (coluna única, sem ícone/tabela,
+fonte padrão, cabeçalhos convencionais) — não é preciso reaplicar as regras,
+só preencher.
+
 ### Antes de gerar o arquivo: feche as pendências
 
 Antes de escrever o `.md`, revise a otimização inteira em rascunho. Para
