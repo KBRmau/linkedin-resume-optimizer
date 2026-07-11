@@ -3,7 +3,58 @@
 Skill portátil para otimizar perfis de LinkedIn e currículos, utilizável em
 Claude Code, Cursor e Codex.
 
-## Onde está o conteúdo
+## Como usar (explicado bem simples)
+
+Imagina que você tem um amigo muito esperto que sabe exatamente o que
+recrutadores gostam de ler. Você só precisa mostrar suas coisas pra ele, uma
+de cada vez, e ele te devolve tudo arrumadinho.
+
+**Passo 1 — Peça pra começar.**
+Abra o Claude Code (ou Cursor, ou Codex) dentro desta pasta e diga algo como
+"quero otimizar meu LinkedIn". A skill acorda sozinha.
+
+**Passo 2 — Responda uma pergunta de cada vez.**
+Ele vai pedir, uma coisa por vez (sem te afogar com uma lista gigante):
+1. O texto debaixo do seu nome no LinkedIn (headline).
+2. O texto "Sobre" (About).
+3. Suas 3 principais skills.
+4. Cada emprego que você já teve.
+5. Sua educação.
+6. Pra qual vaga/área você quer melhorar o perfil.
+7. Se seu perfil tá em português ou inglês.
+
+Dica: pode colar tudo de uma vez também, se for mais fácil — ele entende.
+
+**Passo 3 — Ele te faz perguntas de "detetive".**
+Se algum bullet ficar sem número (tipo "ajudei muito" sem dizer quanto), ele
+vai perguntar antes de escrever qualquer coisa — porque "ajudei muito" não
+convence ninguém, mas "atendi 100 clientes" sim. Se você não sabe o número
+exato, tudo bem, ele te ajuda a estimar.
+
+**Passo 4 — Ele entrega um arquivo `.md`.**
+Um arquivo de texto mostrando **o que tinha antes** e **como fica melhor**,
+seção por seção, com o motivo de cada troca. Você lê, decide o que aceita.
+
+**Passo 5 — Se quiser, ele também arruma seu currículo.**
+É só pedir. Ele usa as mesmas regras do LinkedIn, só muda o formato (porque
+currículo não tem "headline" nem "About" do jeito que o LinkedIn tem).
+
+**Passo 6 — Se quiser, ele transforma o currículo em PDF de verdade.**
+Só acontece se você pedir — por padrão ele só entrega o texto. Se pedir PDF,
+ele monta um arquivo bonito e pronto pra passar pelos robôs que as empresas
+usam pra ler currículo (isso se chama ATS).
+
+**Passo 7 — Dicas de "Aberto a trabalho" e SSI.**
+No final, ele te dá um checklist de como configurar o botão verde
+"#OpenToWork" do LinkedIn, e — se você colar os números do SSI (uma nota que
+o próprio LinkedIn te dá) — ele te fala exatamente o que fazer pra melhorar
+essa nota.
+
+**Importante:** os arquivos que ele gera (o `.md` do seu perfil, o `.md` do
+seu currículo, o PDF) **nunca vão pro GitHub sozinhos** — eles ficam só no
+seu computador, porque têm seus dados pessoais. Isso já vem configurado.
+
+## Onde está o conteúdo (pra quem for mexer na skill)
 
 O arquivo canônico é [`skills/linkedin-resume-optimizer/SKILL.md`](skills/linkedin-resume-optimizer/SKILL.md).
 Todo o comportamento da skill (o que perguntar, como avaliar, formato de
@@ -16,7 +67,17 @@ ferramenta apontarem para o mesmo conteúdo, sem duplicar a lógica:
 - `.codex/prompts/linkedin-resume-optimizer.md` — prompt customizado do Codex
   CLI (`/linkedin-resume-optimizer`).
 
-## Como usar
+Arquivos de apoio dentro de `skills/linkedin-resume-optimizer/`:
+
+- `references/senior-benchmark-profile.md` — perfil real usado como régua de
+  densidade de dado sênior (cada bullet tem pelo menos um número).
+- `references/ssi-tips.md` — escala e dicas por pilar do Social Selling Index.
+- `references/banned-phrases.md` — clichês e verbos fracos a evitar.
+- `pdf/` — gerador de PDF opcional (template HTML + script Node com
+  `puppeteer-core`, usa o Chrome/Edge já instalado, não baixa nada extra).
+  Só roda se o usuário pedir PDF explicitamente.
+
+## Como usar por ferramenta (versão técnica)
 
 - **Claude Code**: abra este repositório, peça "otimize meu linkedin" — a
   skill é carregada automaticamente pela descrição.
@@ -25,5 +86,19 @@ ferramenta apontarem para o mesmo conteúdo, sem duplicar a lógica:
 - **Codex CLI**: rode `codex` dentro deste repositório e use
   `/linkedin-resume-optimizer`.
 
+Para gerar PDF do currículo (opcional):
+
+```bash
+cd skills/linkedin-resume-optimizer/pdf
+npm install   # só na primeira vez
+node generate-pdf.mjs output/seu-cv.html output/seu-cv.pdf --format=a4
+```
+
 Para atualizar o comportamento da skill, edite só o arquivo canônico em
 `skills/linkedin-resume-optimizer/SKILL.md`.
+
+## Privacidade
+
+Os arquivos gerados (`*-linkedin-otimizado.md`, `*-curriculo-otimizado.md`,
+`*-curriculo-otimizado.pdf`) contêm dados pessoais reais de quem usar a
+skill e estão no `.gitignore` por padrão — não vão pro repositório sozinhos.
