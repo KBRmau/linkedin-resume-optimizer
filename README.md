@@ -33,7 +33,11 @@ exato, tudo bem, ele te ajuda a estimar.
 
 **Passo 4 — Ele entrega um arquivo `.md`.**
 Um arquivo de texto mostrando **o que tinha antes** e **como fica melhor**,
-seção por seção, com o motivo de cada troca. Você lê, decide o que aceita.
+seção por seção, com o motivo de cada troca. Antes de te entregar, ele passa
+um "raio-x" automático no próprio arquivo pra conferir se não esqueceu nada
+(seção faltando, bullet de menos, regra quebrada) — parecido com aquele
+momento em que você confere a lição de casa antes de entregar. Você lê,
+decide o que aceita.
 
 **Passo 5 — Se quiser, ele também arruma seu currículo.**
 É só pedir. Ele usa as mesmas regras do LinkedIn, só muda o formato (porque
@@ -76,6 +80,11 @@ Arquivos de apoio dentro de `skills/linkedin-resume-optimizer/`:
 - `pdf/` — gerador de PDF opcional (template HTML + script Node com
   `puppeteer-core`, usa o Chrome/Edge já instalado, não baixa nada extra).
   Só roda se o usuário pedir PDF explicitamente.
+- `scripts/lint-output.mjs` — checagem estrutural de um `.md` gerado (seções
+  obrigatórias, contagem de bullets 3-5, frases banidas, regras fixas de
+  Open to Work). Roda automaticamente depois de qualquer geração, como
+  guarda de regressão — é o mais perto de um "teste automatizado" que uma
+  skill baseada em prompt consegue ter.
 
 ## Como clonar e abrir em cada editor
 
@@ -135,6 +144,13 @@ Para gerar PDF do currículo (opcional):
 cd skills/linkedin-resume-optimizer/pdf
 npm install   # só na primeira vez
 node generate-pdf.mjs output/seu-cv.html output/seu-cv.pdf --format=a4
+```
+
+Para checar manualmente um arquivo já gerado (a skill já faz isso sozinha,
+mas dá pra rodar à parte):
+
+```bash
+node skills/linkedin-resume-optimizer/scripts/lint-output.mjs seu-arquivo-linkedin-otimizado.md
 ```
 
 Para atualizar o comportamento da skill, edite só o arquivo canônico em

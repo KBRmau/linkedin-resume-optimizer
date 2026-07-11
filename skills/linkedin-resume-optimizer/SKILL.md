@@ -42,7 +42,14 @@ pela metade ou ignorada.
 9. **(Opcional) Currículo em PDF/texto**, se o usuário também quiser o CV
    otimizado, não só o LinkedIn. Se pedir isso, aplicar a Etapa 2b além da
    Etapa 2 — currículo não é o mesmo formato que o perfil do LinkedIn.
-10. **(Opcional, só se for otimizar currículo) Descrição da vaga-alvo**, se
+10. **(Opcional) Foto, banner e Featured section** — perguntar se o perfil já
+   tem foto profissional, banner (a imagem de capa atrás da foto) e a seção
+   Featured preenchida (artigo técnico, projeto, certificação ou post
+   fixado). Não são texto a reescrever, mas entram no `.md` como checklist de
+   recomendação — ver `references/ssi-tips.md`, pilar "Establish your
+   professional brand", que já tem as dicas certas para cada um desses três
+   itens quando estão fracos ou ausentes.
+11. **(Opcional, só se for otimizar currículo) Descrição da vaga-alvo**, se
    houver uma vaga específica em mente — permite casar palavras-chave do
    currículo com o ATS (Applicant Tracking System) daquela vaga. Sem isso,
    otimiza para o cargo-alvo genérico do item 6. Se houver, aplique **keyword
@@ -211,7 +218,7 @@ LinkedIn:
   - Ordem reverso-cronológica, sempre.
   - 1 página se `< 10 anos` de experiência; 2 páginas se `10+` — nunca mais
     que isso.
-  - Se o usuário deu a descrição da vaga-alvo (item 10 da coleta), extrair as
+  - Se o usuário deu a descrição da vaga-alvo (item 11 da coleta), extrair as
     palavras-chave/skills que aparecem lá e confirmar que aparecem no
     currículo (na seção de skills e/ou em pelo menos um bullet) — isso é o
     que o ATS casa primeiro.
@@ -224,7 +231,58 @@ LinkedIn:
 - **Saída**: arquivo próprio, `<nome-em-kebab-case>-curriculo-otimizado.md`,
   com a mesma lógica de Manter/Trocar por seção e Pendências para dado
   faltando — não misturar no mesmo arquivo do LinkedIn, são documentos
-  diferentes ainda que compartilhem conteúdo.
+  diferentes ainda que compartilhem conteúdo. Usar este esqueleto (mesmo
+  espírito do template da Etapa 2, adaptado às seções de currículo):
+
+```markdown
+# Currículo otimizado — <Nome>
+
+Cargo-alvo: <cargo-alvo>
+Idioma: <idioma>
+
+## Cabeçalho
+Manter/Trocar dos dados de contato (normalmente Manter — é informação
+factual).
+
+## Resumo Profissional
+**Manter:** <1 frase>
+**Trocar:**
+Antes:
+> <bloco de texto atual>
+Depois:
+> <bloco de texto novo>
+*Por quê:* <1-2 frases>
+
+## Competências Core / Skills
+(mesma estrutura Manter/Trocar em tabela ou lista)
+
+## Experiência Profissional
+Uma subseção `### <Empresa> → <título normalizado> (<período>)` por
+experiência, mais recente primeiro, cada uma com Manter/Trocar/Antes/Depois,
+sempre com 3-5 bullets no template Led+escala+tech.
+
+## Projetos
+(se houver — mesma estrutura Manter/Trocar/Antes/Depois das experiências)
+
+## Educação
+Manter/Trocar. Se não há nada de texto para mudar, registrar isso
+explicitamente.
+
+## Certificações
+Manter/Trocar.
+
+## Formatação (checklist ATS)
+Confirmação dos itens da lista de Regras ATS acima (coluna única, cabeçalhos
+convencionais, ordem cronológica, limite de página, keywords da vaga se
+houver).
+
+## Resumo
+Tabela final: Seção | Manter | Trocar.
+
+## Pendências
+Mesma lógica da Etapa 2 — dado mensurável faltando, marcado como
+`[FALTA DADO: ...]` no corpo E listado aqui.
+```
 
 ### Etapa 2c — PDF do currículo (opcional, só se o usuário pedir explicitamente)
 
@@ -317,6 +375,13 @@ comum), registrar isso explicitamente em vez de omitir a seção.
 ## Resumo
 Tabela final: Seção | Manter | Trocar — uma linha por seção, visão de conjunto.
 
+## Marca Pessoal (Foto, Banner, Featured)
+Checklist de 3 itens com Sim/Não/Não informado para cada (foto profissional,
+banner com stack/área, Featured preenchida) — se "Não" ou "Não informado" em
+algum, incluir a dica correspondente de `references/ssi-tips.md` (pilar
+"Establish your professional brand"). Se o usuário não respondeu o item 10 da
+coleta, listar os 3 como pendência leve (não bloqueia a geração do arquivo).
+
 ## Open to Work
 Checklist preenchido com os valores recomendados para cada campo (job
 titles, location types, locations, start date, employment types,
@@ -338,6 +403,14 @@ Regras do conteúdo (independente de ser chat ou arquivo):
 
 - Não reescreva silenciosamente fatos — se faltar um número, marque
   `[FALTA DADO: ...]` no lugar exato e pergunte ao usuário, nunca suponha.
+- Depois de gerar o arquivo, rode o lint estrutural antes de reportar como
+  pronto: `node skills/linkedin-resume-optimizer/scripts/lint-output.mjs
+  <arquivo-gerado>`. Ele checa seções obrigatórias, contagem de bullets
+  (3-5), frases banidas e as regras fixas de Open to Work (Recruiters only,
+  Immediately) — não substitui julgamento, mas pega regressão mecânica
+  antes do usuário ver. Se ele retornar `issues` (exit code 1), corrigir
+  antes de reportar pronto; `warnings` (exit code 0) podem ser legítimos
+  (ex. bullet incompleto por pendência real de dado) — usar julgamento.
 - Depois de gerar o arquivo, informe ao usuário o caminho do arquivo e um
   resumo de 1-2 frases do que mudou — não repita o conteúdo inteiro no chat.
 
