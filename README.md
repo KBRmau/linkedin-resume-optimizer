@@ -33,11 +33,16 @@ exato, tudo bem, ele te ajuda a estimar.
 
 **Passo 4 — Ele entrega um arquivo `.md`.**
 Um arquivo de texto mostrando **o que tinha antes** e **como fica melhor**,
-seção por seção, com o motivo de cada troca. Antes de te entregar, ele passa
-um "raio-x" automático no próprio arquivo pra conferir se não esqueceu nada
-(seção faltando, bullet de menos, regra quebrada) — parecido com aquele
-momento em que você confere a lição de casa antes de entregar. Você lê,
-decide o que aceita.
+seção por seção, com o motivo de cada troca, mais uma **nota de 0 a 100**
+comparando antes/depois (tipo um jogo — quanto mais dado real você dá, mais
+a nota sobe). Antes de te entregar, ele passa um "raio-x" automático no
+próprio arquivo pra conferir se não esqueceu nada (seção faltando, bullet de
+menos, regra quebrada) — parecido com aquele momento em que você confere a
+lição de casa antes de entregar. Você lê, decide o que aceita.
+
+Quer ver como fica um exemplo pronto (com dado fictício) antes de rodar com
+o seu? Veja
+[`skills/linkedin-resume-optimizer/examples/exemplo-antes-depois.md`](skills/linkedin-resume-optimizer/examples/exemplo-antes-depois.md).
 
 **Passo 5 — Se quiser, ele também arruma seu currículo.**
 É só pedir. Ele usa as mesmas regras do LinkedIn, só muda o formato (porque
