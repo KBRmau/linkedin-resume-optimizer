@@ -66,7 +66,7 @@ Antes:
 Depois:
 > - Liderou a aquisição paga em Meta Ads e Google Ads da Nuvora, gerindo R$180 mil/mês de budget e reduzindo o CAC em 34% em 6 meses através de testes de criativo e segmentação, usando Meta Ads Manager e Google Ads.
 > - Liderou o programa de CRO do onboarding, elevando a taxa de conversão de cadastro de 2,1% para 3,4% através de testes A/B estruturados, usando Optimizely.
-> - Construiu dashboards de performance de aquisição em tempo real para o time de growth, usando GA4 e Looker Studio.
+> - Construiu dashboards de performance de aquisição em tempo real, consultados semanalmente pela squad de growth (6 pessoas), usando GA4 e Looker Studio.
 > - Estruturou a segmentação de público para campanhas pagas, reduzindo o custo por lead qualificado em 18%, usando Meta Ads e dados de CRM (HubSpot).
 
 ### Zelo Commerce — Analista de Marketing (Jan 2022 – Fev 2024)
@@ -79,7 +79,7 @@ Antes:
 Depois:
 > - Construiu dashboards de aquisição em GA4 e Mixpanel, reduzindo o tempo de análise semanal do time de marketing de 4 horas para 40 minutos.
 > - Implementou testes A/B em campanhas de e-mail marketing, aumentando a taxa de clique em 22%, usando Klaviyo.
-> - Estruturou relatórios mensais de performance de canal para a diretoria, consolidando dados de GA4, Meta Ads e Google Ads.
+> - Estruturou relatórios mensais de performance de canal para a diretoria, consolidando dados de GA4, Meta Ads e Google Ads e reduzindo o tempo de preparação do relatório de 2 dias para 3 horas.
 
 ## Educação
 
@@ -93,20 +93,25 @@ disponíveis, por isso o Depois chega perto do teto.
 
 | | Antes | Depois |
 |---|---|---|
-| **Total** | **18/100** | **93/100** |
+| **Total** | **13/100** | **92/100** |
 | Headline | 0/10 | 10/10 |
 | About | 0/15 | 15/15 |
 | Top skills | 0/5 | 5/5 |
 | Bullets quantificados | 0/25 | 25/25 |
 | 3-5 bullets por experiência | 0/10 | 10/10 |
-| Consistência de stack | 3/10 | 10/10 |
-| Ausência de frases banidas | 5/10 | 10/10 |
-| Marca pessoal | 10/10 | 8/10 |
+| Consistência de stack | 0/10 | 10/10 |
+| Ausência de frases banidas | 6/10 | 10/10 |
+| Marca pessoal | 7/10 | 7/10 |
 | Open to Work | 0/5 | 0/5 |
 
-Ganho: **+75 pontos**. Maior gargalo restante: **Open to Work** (0/5) — não
-configurado nesta simulação. Segundo: **Marca pessoal** (8/10) — banner
-ainda genérico, sem menção à stack/área.
+Ganho: **+79 pontos**. Maior gargalo restante: **Open to Work** (0/5) — não
+configurado nesta simulação. Segundo: **Marca pessoal** (7/10) — Featured
+ainda não preenchida (foto e banner já presentes, banner genérico).
+
+*Nota de auditoria:* Marca pessoal fica igual no Antes e no Depois de
+propósito — foto/banner/Featured são configuração de conta, não mudam só
+porque o texto foi reescrito. Um score que subisse aí sem nenhuma ação real
+estaria inflado.
 
 ## Resumo
 
