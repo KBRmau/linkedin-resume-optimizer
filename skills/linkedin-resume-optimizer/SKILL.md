@@ -13,7 +13,10 @@ apenas apontam para ele.
 ## Etapa 1 — Coleta de dados
 
 Peça as informações **uma seção por vez**, nesta ordem, colando o texto como
-aparece no LinkedIn (não peça para o usuário resumir — texto bruto é melhor):
+aparece no LinkedIn (não peça para o usuário resumir — texto bruto é melhor).
+**Faça exatamente uma pergunta por vez e espere a resposta** antes de pedir a
+próxima — uma lista inteira de perguntas de uma vez tende a ser respondida
+pela metade ou ignorada.
 
 1. **Headline** (a legenda embaixo do nome).
 2. **About** (o resumo/bio).
@@ -42,10 +45,19 @@ aparece no LinkedIn (não peça para o usuário resumir — texto bruto é melho
 8b. **(Opcional, só se for otimizar currículo) Descrição da vaga-alvo**, se
    houver uma vaga específica em mente — permite casar palavras-chave do
    currículo com o ATS (Applicant Tracking System) daquela vaga. Sem isso,
-   otimiza para o cargo-alvo genérico do item 6.
+   otimiza para o cargo-alvo genérico do item 6. Se houver, aplique **keyword
+   injection por reformulação, nunca por invenção**: pegue o vocabulário
+   exato da vaga e reescreva experiência real do usuário com esse vocabulário
+   — nunca adicione uma skill que o usuário não tem só porque está na vaga.
+   Ex.: vaga pede "MLOps" e o currículo já tem "observability" e "error
+   handling" separados → reformular como "MLOps and observability: evals,
+   error handling" (mesma experiência, vocabulário casado).
 
 Se o usuário já mandar tudo de uma vez (comum), não precisa perguntar de novo —
 só confirme se algo essencial está faltando (mais comumente: o cargo-alvo).
+(A regra de "uma pergunta por vez" vale para esta coleta inicial, quando ainda
+não há rascunho — na etapa final de fechar pendências sobre um rascunho quase
+pronto, o formato muda para lista única; ver "Antes de gerar o arquivo".)
 
 ## Etapa 2 — Otimização
 
@@ -116,19 +128,41 @@ densidade, os padrões que fazem diferença são:
   que reflete a realidade daquela experiência específica.
 
 - **Consistência de stack entre headline, about, top skills e bullets** — as
-  mesmas 5-8 tecnologias-chave devem aparecer repetidas nessas quatro seções,
-  isso é o que os algoritmos de busca do LinkedIn (e olho humano de
-  recrutador) pegam em 5 segundos.
+  mesmas 5-8 tecnologias-chave devem aparecer repetidas nessas quatro seções.
+  Motivo concreto — o "teste dos 6 segundos": um recrutador decide se
+  continua lendo o perfil/currículo em ~6 segundos, olhando só o topo. Se
+  cargo-alvo + stack forte + 1 resultado de produção/negócio não ficam óbvios
+  nesse primeiro olhar, sem precisar garimpar bullet por bullet, o resto do
+  documento pode nem ser lido — por isso a repetição do mesmo vocabulário no
+  topo (headline/título + resumo) não é redundância, é o que garante que a
+  informação certa apareça exatamente onde o olho passa primeiro.
 
-- **Cargos antigos/irrelevantes para o cargo-alvo**: encurtar, não deletar —
-  1-2 linhas focadas no que ainda é transferível para a área-alvo.
+- **Lista de termos banidos** — ver `references/banned-phrases.md`. Dois
+  grupos: (1) clichês vazios de currículo ("leveraged", "spearheaded",
+  "facilitated", "synergies", "robust", "seamless", "cutting-edge",
+  "passionate about", "results-oriented", "proven track record" — e
+  equivalentes em português tipo "apaixonado por", "dinâmico", "proativo"
+  sem prova); (2) verbos de ownership fraco quando existe verbo mais forte
+  disponível ("helped", "assisted", "responsible for", "worked on",
+  "participated in" → trocar por "led", "built", "designed", "drove" sempre
+  que a pessoa de fato liderou/construiu aquilo, não só participou). Revisar
+  todo texto final contra essa lista antes de considerar pronto.
 
-- **3 a 5 bullets por experiência** (nunca menos de 3 se há conteúdo
-  suficiente, nunca mais de 5). Se o cargo tem mais pontos do que isso,
-  escolha os de maior peso de resultado mensurável e corte o resto — não
-  empilhe responsabilidades genéricas só porque existiam no texto original.
-  Menos bullets, cada um mais denso, lê como sênior; muitos bullets rasos lê
-  como júnior tentando preencher espaço.
+- **3 a 5 bullets por experiência, sempre — inclusive em cargos antigos ou
+  menos alinhados ao cargo-alvo.** Não existe regra de "encurtar cargo antigo
+  para 1-2 linhas": se o cargo tem conteúdo real por trás (responsabilidades,
+  sistemas, decisões tomadas), vale minerar esse conteúdo e escrever 3-5
+  bullets quantificados, do mesmo jeito que qualquer outra experiência — só
+  reduzir abaixo de 3 se genuinamente não houver substância para sustentar
+  mais bullets sem enchimento genérico. Cargo antigo pode (e deve) puxar
+  menos peso relativo no conjunto do perfil por estar mais longe no tempo,
+  mas isso se resolve com a ordem (mais recente primeiro) e com bullets mais
+  focados no que é transferível — não com um único bullet raso. Se o cargo
+  tem mais pontos do que 5, escolha os de maior peso de resultado mensurável
+  e corte o resto — não empilhe responsabilidades genéricas só porque
+  existiam no texto original. Menos bullets do que o necessário, ou bullets
+  rasos demais, lê como júnior tentando preencher espaço tanto quanto bullets
+  em excesso.
 
 - **Sênior se mostra com número, não com adjetivo.** "Led", "senior",
   "expert" no texto não convencem sozinhos — o que convence é dado
@@ -143,9 +177,14 @@ densidade, os padrões que fazem diferença são:
 
 ### Etapa 2b — Currículo (CV), só se o usuário pedir
 
-O currículo **não é um copy-paste do LinkedIn** — reaproveite os princípios de
-bullet quantificado, senioridade consistente e template "Led + escala + tech"
-(todos valem igual), mas a estrutura de seções é diferente:
+Currículo e LinkedIn seguem os **mesmos padrões de conteúdo** — mesma régua
+de senioridade, mesmo template de bullet, mesmo range de 3-5 bullets por
+experiência (sem exceção para cargo antigo), mesma exigência de dado
+mensurável. Não existe versão "resumida" ou com regras próprias para o
+currículo — os dois documentos usam os princípios da seção anterior como um
+único padrão. A única coisa que muda entre os dois é a **estrutura de
+seções**, porque um currículo não tem headline nem About no sentido do
+LinkedIn:
 
 - **Sem headline separada** — vira o título logo abaixo do nome no topo do
   documento (mesmo texto/nível de senioridade usado no LinkedIn, por
@@ -176,6 +215,12 @@ bullet quantificado, senioridade consistente e template "Led + escala + tech"
     palavras-chave/skills que aparecem lá e confirmar que aparecem no
     currículo (na seção de skills e/ou em pelo menos um bullet) — isso é o
     que o ATS casa primeiro.
+  - **Nunca hackear o ATS**: sem texto escondido (fonte branca, tamanho 0,
+    fora da margem), sem keyword stuffing (repetir uma skill várias vezes
+    sem contexto só para casar com o parser), sem listar skill/métrica que
+    não está na fonte de verdade que o usuário forneceu. Isso não passa
+    numa entrevista técnica depois e pode desqualificar automaticamente em
+    parsers que detectam o truque.
 - **Saída**: arquivo próprio, `<nome-em-kebab-case>-curriculo-otimizado.md`,
   com a mesma lógica de Manter/Trocar por seção e Pendências para dado
   faltando — não misturar no mesmo arquivo do LinkedIn, são documentos
@@ -194,6 +239,15 @@ lista**, antes de gerar o arquivo — não gere o `.md` com `[FALTA DADO: ...]`
 espalhado se dá para simplesmente perguntar primeiro. Só prossiga sem a
 resposta se o usuário disser explicitamente para gerar mesmo assim com
 placeholders.
+
+Se o usuário não sabe e **não tem como saber** o número exato (ex. empresa
+não divulga métrica, dado não foi medido), não trave em `[FALTA DADO]` — ajude
+a enquadrar qualitativamente com uma comparação verificável em vez de um
+número inventado. Ex.: em vez de inventar "$1M+ em receita", uma frase como
+"permitiu que um time de 12 desenvolvedores lançasse features 3x mais rápido"
+é aceitável se o usuário confirmar que essa comparação é real — é uma
+terceira opção entre "número exato" e "placeholder vazio", não uma licença
+para inventar.
 
 ### Formato de saída
 
@@ -229,9 +283,8 @@ Depois:
 
 ## Experiências
 Uma subseção `### <Empresa / cargo>` por experiência, mais recente primeiro,
-cada uma com Manter/Trocar/Antes/Depois/Por quê. Cargos antigos/irrelevantes:
-aplicar a regra de encurtar, não deletar, e marcar isso explicitamente em
-"Por quê".
+cada uma com Manter/Trocar/Antes/Depois/Por quê, sempre com 3-5 bullets
+(inclusive em cargos antigos — ver princípio de bullets acima).
 
 ## Educação
 Manter/Trocar, mesma estrutura. Se não há nada de texto para mudar (caso
