@@ -213,6 +213,17 @@ LinkedIn:
   usa antes dos bullets.
 - **Skills**: lista compacta, agrupada por categoria se fizer sentido
   (Linguagens / Cloud / Ferramentas), sem limite de 3-5 como no LinkedIn.
+- **Portfólio para áreas não-tech**: se o cargo-alvo for de uma área onde o
+  trabalho é visual/criativo (design, fotografia, vídeo, social media,
+  ilustração, arquitetura, moda, etc. — qualquer área onde "ver o trabalho"
+  importa mais do que "ler sobre o trabalho"), pergunte se há link de
+  portfólio (Behance, Instagram profissional, site pessoal, Vimeo/YouTube,
+  Pinterest) e adicione ao cabeçalho **e** a cada experiência relevante
+  (ex. "Portfólio: behance.net/..." logo abaixo do bullet daquele cargo, se
+  ela tiver um link específico para aquele trabalho). Currículo de tech se
+  apoia em GitHub/projeto técnico; currículo de área criativa se apoia em
+  portfólio visual — é o equivalente funcional, não deixar de pedir só
+  porque o template original (pensado em tech) não tinha essa seção.
 - **Regras ATS (Applicant Tracking System)** — currículo passa por parser
   automático antes de chegar a um humano:
   - Formatação simples: sem tabelas, colunas, caixas de texto, ícones ou
